@@ -9,7 +9,7 @@ module random_noise_generator (
     reg [7:0] lfsr; 
     reg [7:0] noise_mask;
 
-   
+  
     always @(posedge clk or posedge rst) begin
         if (rst)
             lfsr <= 8'hA5; // Initial seed
